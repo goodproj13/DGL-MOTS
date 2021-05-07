@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>DGL-MOTS Dataset for Autonomous Driving</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="./images/site-logo.png">
+
+  <!-- Google icon
+  -------------------------------------------------- -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Analytics
+  -------------------------------------------------- -->
+
+  <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
+  <style>
+    img {
+        display: block;
+    }
+
+    .column-50 {
+        float: left;
+        width: 50%;
+    }
+    .row-50:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .floating-teaser {
+        float: left;
+        width: 30%;
+        text-align: center;
+        padding: 15px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Primary Page Layout -->
+  <div class="container">
+    <br>
+    <h4 style="text-align:center">DGL-MOTS Dataset for Autonomous Driving</h4>    
+    
+    <div class="section">
+      <h5>1. Introduction</h5>
+    </div>
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">      
+      <p align="justify">
+      The multi-object tracking and segmentation (MOTS) is a critical task for autonomous driving applications. In this work, we offer the DGL-MOTS Dataset (Figure 1.), which includes 106,089 instance masks for 1,632 distinct objects in 40 video frames. Our effort exceeds the state-of-the-art KITTI MOTS dataset <sup>[1]</sup> in terms of dataset scale, object density and variations, and scene diversity. Results on extensive cross-dataset evaluations indicate the significant performance improvements of several state-of-the-art methods trained on our DGL-MOTS dataset.
+      </p>
+      <figure>
+        <center>
+        <img src="./images/Picture1.png" style="width:90%"></img>
+        Figure 1: Showcase of our DGL-MOT dataset. Our dataset is divided by different driving 
+        <br>
+        scenarios in terms of highway, local, parking, and resident
+		    </center>
+		  </figure>
+    </div>
+    
+    <br>
+
+	 <div class="section">
+  <h5>2. Data Download</h5>
+  We are currently running the annotation corrections of our dataset. 
+  Some sample data are available <a href="https://va.tech.purdue.edu/DGL-MOTS/"> HERE</a>. <br>
+  Annotation statistics is displayed in Table 1.
+		<figure>
+      <center>
+		    <img src="./images/tab_1.png" style="width:50%"></img>
+        Table 1.  Annotation statistics.  Our dataset outperforms the KITTI MOTS in annotation volume and density.
+      </center>
+		</figure>
+	</div>
+  
+  <br>
+  <div class="section">
+    <h5>3. Raw Data Download</h5>
+    <div class="container" style="width:95%">
+      <!-- Icon row -->
+      <div class="row">
+        <div class="five columns">
+          <a href=""><img style="width: 100%; height: 200px;" src="./images/highway.jpg"></a>
+        </div>
+
+        <div class="five columns">
+          <a href="https://va.tech.purdue.edu/DGL-MOTS/local.zip"><img style="width: 100%; height: 200px;" src="./images/local.jpg"></a>
+        </div>                   
+      </div>
+      <!-- Link row -->
+      <div class="row">
+        <div class="five columns">
+          <center>
+            <a href="">Highway</a>
+          </center>
+        </div>
+
+        <div class="five columns">
+          <center>
+            <a href="https://va.tech.purdue.edu/DGL-MOTS/local.zip">Local</a>
+          </center>
+        </div> 
+      </div>
+
+      <div class="row">
+        <div class="five columns">    
+        <a href="https://va.tech.purdue.edu/DGL-MOTS/parking.zip"><img style="width:100%; height: 200px;" src="./images/parking lot.jpg"></a>
+      </div>
+
+      <div class="five columns">
+        <a href="https://va.tech.purdue.edu/DGL-MOTS/resident.zip"><img style="width:100%; height: 200px;" src="./images/resident.jpg"></a>
+      </div>                   
+    </div>
+
+    <div class="row">
+      <div class="five columns">
+        <center>
+          <a href="https://va.tech.purdue.edu/DGL-MOTS/parking.zip">Parking</a>
+        </center>
+      </div>
+      <div class="five columns">
+        <center>
+          <a href="https://va.tech.purdue.edu/DGL-MOTS/resident.zip">Resident</a>
+        </center>
+      </div> 
+    </div>  
+    <br>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h5>4. DGL-Labeler Github</h5>
+      <a href=""><img style="border: 1px solid #ddd; border-radius: 4px; padding: 0px; width: 150px;" src="./images/github.png"></a>
+        &nbsp&nbsp&nbsp&nbsp <b>Coming Soon ...</b>
+  </div>
+  <br>
+  <div class="section">
+    <h5>5. Reference</h5>
+  </div>
+  <p>[1] Voigtlaender, Paul, et al. "MOTS: Multi-object tracking and segmentation." <em>Proceedings of the IEEE conference on computer vision and pattern recognition</em>. 2019.</p>
+  <br>
+  <br>
+</body>
+</html>
