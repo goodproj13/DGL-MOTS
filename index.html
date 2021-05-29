@@ -64,22 +64,31 @@
   <!-- Primary Page Layout -->
   <div class="container">
     <br>
-    <h4 style="text-align:center">DGL-MOTS Dataset for Autonomous Driving</h4>    
-    
+    <h3 style="text-align:center"><b>DGL-MOTS Dataset for Autonomous Driving</b></h3>    
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5WVB8_TqMKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
     <div class="section">
       <h5>1. Introduction</h5>
     </div>
     <div id="teaser" class="container" style="width:100%; margin:0; padding:0">      
       <p align="justify">
-      The multi-object tracking and segmentation (MOTS) is a critical task for autonomous driving applications. In this work, we offer the DGL-MOTS Dataset (Figure 1.), which includes 106,089 instance masks for 1,632 distinct objects in 40 video frames. Our effort exceeds the state-of-the-art KITTI MOTS dataset <sup>[1]</sup> in terms of dataset scale, object density and variations, and scene diversity. Results on extensive cross-dataset evaluations indicate the significant performance improvements of several state-of-the-art methods trained on our DGL-MOTS dataset.
+      <!--The multi-object tracking and segmentation (MOTS) is a critical task for autonomous driving applications. 
+        In this work, we offer the DGL-MOTS Dataset (Figure 1.), which includes 106,089 instance masks for 
+        1,632 distinct objects in 40 video frames. Our effort exceeds the state-of-the-art KITTI MOTS dataset <sup>[1]</sup> 
+        in terms of dataset scale, object density and variations, and scene diversity. Results on extensive cross-dataset 
+        evaluations indicate the significant performance improvements of several state-of-the-art methods trained on our DGL-MOTS dataset.-->
+        The multi-object tracking and segmentation (MOTS) is a critical task for autonomous driving applications. 
+        In this work, we offer the DGL-MOTS Dataset (Figure 1.), which includes 106,089 instance masks for 1,632 distinct objects in 40 video frames. 
+        Our effort exceeds the state-of-the-art KITTI MOTS <sup>[1]</sup> and BDD100K MOTS <sup>[2]</sup> in terms of annotation quality, 
+        data diversity, and temporal representation. Results on extensive cross-dataset evaluations indicate the significant performance 
+        improvements of several state-of-the-art methods trained on our DGL-MOTS dataset.
       </p>
       <figure>
         <center>
-        <img src="./images/Picture1.png" style="width:90%"></img>
-        Figure 1: Showcase of our DGL-MOT dataset. Our dataset is divided by different driving 
-        <br>
-        scenarios in terms of highway, local, parking, and resident
-		    </center>
+        <img src="./images/Showcase.png" style="width:100%"></img>
+        Figure 1. A showcase of the DGL-MOTS dataset. We collect data based on different driving scenarios and organize training data based on different settings in terms of highway, local, parking, and residential.
+        </center>
 		  </figure>
     </div>
     
@@ -92,8 +101,10 @@
   Annotation statistics is displayed in Table 1.
 		<figure>
       <center>
-		    <img src="./images/tab_1.png" style="width:50%"></img>
-        Table 1.  Annotation statistics.  Our dataset outperforms the KITTI MOTS in annotation volume and density.
+		    <img src="./images/table_1.png" style="width:80%"></img>
+        <!--Table 1.  Annotation statistics.  Our dataset outperforms the KITTI MOTS in annotation volume and density.-->
+        Table 1. Annotation statistics.  Our dataset outperforms the KITTI MOTS in annotation volume and density.  
+        BDD100K offers the largest training data but selected sequentially from video frames, which include redundant temporal information.
       </center>
 		</figure>
 	</div>
@@ -145,7 +156,7 @@
       </div>
       <div class="five columns">
         <center>
-          <a href="https://va.tech.purdue.edu/DGL-MOTS/resident.zip">Resident</a>
+          <a href="https://va.tech.purdue.edu/DGL-MOTS/resident.zip">Residential</a>
         </center>
       </div> 
     </div>  
@@ -163,7 +174,8 @@
   <div class="section">
     <h5>5. Reference</h5>
   </div>
-  <p>[1] Voigtlaender, Paul, et al. "MOTS: Multi-object tracking and segmentation." <em>Proceedings of the IEEE conference on computer vision and pattern recognition</em>. 2019.</p>
+  <p>[1] Voigtlaender, P., Krause, M., Osep, A., Luiten, J., Sekar, B. B. G., Geiger, A., & Leibe, B. (2019). Mots: Multi-object tracking and segmentation. In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em> (pp. 7942-7951).</p>
+  <p>[2] Yu, F., Chen, H., Wang, X., Xian, W., Chen, Y., Liu, F., ... & Darrell, T. (2020). Bdd100k: A diverse driving dataset for heterogeneous multitask learning. In <em>Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</em> (pp. 2636-2645).</p>
   <br>
   <br>
 </body>
